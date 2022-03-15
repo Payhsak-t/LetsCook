@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5c993bdaea.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Meal Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main Heading -->
+      <h1>Meal Finder</h1>
+
+      <!-- Input for meal and random meal generator -->
+      <div class="flex">
+        <form class="flex">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for meals or keywords"
+          />
+          <button type="submit" class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button class="random-btn" id="random">
+          <i class="fas fa-random"></i>
+        </button>
+      </div>
+
+      <!-- Fetched meals-->
+      <div class="result-heading"></div>
+
+      <!-- Meals -->
+      <div class="meals" id="meals"></div>
+
+      <!-- Single Meal details -->
+      <div class="single-meal"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
