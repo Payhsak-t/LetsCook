@@ -105,10 +105,11 @@ function addMealToDOM(meal) {
 
 //Event Listener for search
 submit.addEventListener('submit', searchMeal);
-submit.addEventListener('click', randomMeal);
+random.addEventListener('click', randomMeal);
 
 mealsEl.addEventListener('click', e => {
   const mealInfo = e.path.find(item => {
+    console.log(item);
     if (item.classList) {
       return item.classList.contains('meal-info');
     } else {
